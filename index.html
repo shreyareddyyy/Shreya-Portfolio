@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Shreya</title>
+  
+  <meta property="og:title" content="Portfolio | shreya" />
+  <meta property="og:description" content="Portfolio of shreya" />
+  <meta property="og:url" content="https://akhilanandateja.github.io/portfolio/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <a href="#home" id="goToTopBtn" class="go-to-top-button">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <header id="navbar">
+    <div class="nav-content">
+      <a href="#home" class="nav-logo">Shreya<b>.</b></a>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#showcase">Portfolio</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section-wrapper hero">
+      <div class="hero-content">
+          <div class="hero-text">
+            <p class="intro-text">Hello, my name is</p>
+            <h1 class="hero-name">Shreya Surakanti.</h1>
+            <h2 class="hero-tagline">I build things for AI.</h2>
+            <p class="hero-description">
+              Passionate AI/ML Engineer skilled in building production-ready NLP and Generative AI systems using TensorFlow, PyTorch, and MLOps practices, committed to creating accessible, human-centered solutions with strong focus on model reliability, bias mitigation, and scalability.
+            </p>
+            <a href="https://docs.google.com/document/d/1daO6swd32SQO5zZ7QnSXEss4XmFJ6zY7/edit?usp=sharing&ouid=108666613442847810428&rtpof=true&sd=true" class="btn" target="_blank" rel="noopener noreferrer">View My Resume</a>
+          </div>
+          <div class="hero-image-container">
+          </div>
+      </div>
+      <div class="discover-more">
+        <a href="#about">
+            <span>Discover More</span>
+            <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="section-wrapper">
+        <div class="about-grid reveal">
+            <div class="about-left">
+                <h2 class="section-heading">About Me</h2>
+                <p>I'm an AI/ML Engineer and recent Data Science graduate passionate about building accessible, human-centered AI solutions.
+With strong expertise in end-to-end machine learning pipelines, NLP, Generative AI, and LLMs, I focus on developing reliable, scalable, and bias-aware intelligent systems.
+My work spans predictive analytics, intelligent document processing, and automated validation frameworks — always with emphasis on responsible AI and production readiness. Let's collaborate to innovate!</p>
+                <blockquote>
+                    “AI is not about replacing people, but augmenting them.”
+                    <span>– Satya Nadella</span>
+                </blockquote>
+                <a href="#experience" class="btn btn-secondary">See Experience</a>
+            </div>
+            <div class="about-right">
+                <div class="stats-grid">
+                    <div class="stat-card reveal"><i class="fas fa-briefcase"></i><h3>3+</h3><p>Internships</p></div>
+                    <div class="stat-card reveal"><i class="fas fa-cogs"></i><h3>10+</h3><p>AI Technologies</p></div>
+                    <div class="stat-card reveal"><i class="fas fa-code"></i><h3>5+</h3><p>Projects</p></div>
+                    <div class="stat-card reveal"><i class="fas fa-brain"></i><h3>3+</h3><p>Core Domains</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section-wrapper">
+        <h2 class="section-heading">Education</h2>
+        <div class="education-container reveal">
+            <div class="tabs">
+                <button class="tab-link" onclick="openTab(event, 'Masters')">Masters</button>
+                <button class="tab-link" onclick="openTab(event, 'bachelors')">Bachelors</button>
+            </div>
+            <div id="Masters" class="tab-content">
+                <h3>UNIVERSITY OF CENTRAL MISSOURI, WARRENSBURG, MO</h3>
+                <p><strong>Program:</strong>Ms in Data Science and Artifical Intelligence</p>
+                <p><strong>Years:</strong> 2024 - 2025</p>
+            </div>
+            <div id="bachelors" class="tab-content">
+                <h3>VIGNAN INSTITUTE OF TECHNOLOGY AND SCIENCE , HYDERABAD, INDIA</h3>
+                <p><strong>Program:</strong> Computer Science and Engineering</p>
+                <p><strong>Specialization:</strong> Artificial Intelligence and Machine Learning</p>
+                <p><strong>Years:</strong> 2020 - 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-wrapper">
+        <h2 class="section-heading">Work Experience</h2>
+        <div class="experience-grid">
+            <div class="experience-card reveal">
+                <img src="./images/aicte.png" alt="EduSkills Logo" class="experience-logo">
+                <h3 class="experience-title">Python Full Stack Developer</h3>
+                <div class="company-details">
+                    <p class="experience-company">AICTE - EduSkills Internship</p>
+                    <span class="internship-type">Virtual</span>
+                </div>
+                <p class="experience-duration">Nov 2021 - Feb 2022</p>
+                <ul>
+                    <li>Completed a 10-week intensive internship focused on Python Full Stack development.</li>
+                    <li>Gained hands-on experience in building and deploying web applications.</li>
+                    <li>Successfully developed projects, demonstrating proficiency in both frontend and backend technologies.</li>
+                </ul>
+            </div>
+            <div class="experience-card reveal">
+                <img src="./images/logo.png" alt="Brain O Vision Logo" class="experience-logo">
+                <h3 class="experience-title">Data Science Intern</h3>
+                <div class="company-details">
+                    <p class="experience-company">Brain O Vision</p>
+                    <span class="internship-type">Virtual</span>
+                </div>
+                <p class="experience-duration">July 2023 - Dec 2024</p>
+                <ul>
+                    <li>Built NLP/LLM pipelines reducing manual review effort by 30%</li>
+                    <li>Developed classification, trend analysis, and recommendation models — boosting accuracy by 18%.</li>
+                    <li>Integrated real-time batch pipelines using PySpark and AWS</li>
+                </ul>
+            </div>
+            <div class="experience-card reveal">
+                <img src="./images/qualitymatrix_logo.jpeg" alt="Quality Matrix Logo" class="experience-logo">
+                <h3 class="experience-title">QA Engineer</h3>
+                <div class="company-details">
+                    <p class="experience-company">Quality Matrix</p>
+                    <span class="internship-type">On Site</span>
+                </div>
+                <p class="experience-duration">August 2023 - July 2024</p>
+                <ul>
+                    <li>Created and executed detailed manual test cases and test scenarios based on business and functional requirements.</li>
+                    <li>Identified, documented, and tracked bugs using issue-tracking tools, working closely with developers to ensure timely fixes.</li>
+                    <li>Performed functional, regression, smoke, and UI testing to ensure application stability and usability across releases.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="showcase" class="section-wrapper">
+        <div class="showcase-header reveal">
+            <h2 class="section-heading">Portfolio Showcase</h2>
+            <p>Explore my journey through projects, certifications, and technical expertise. Each section represents a milestone in my continuous learning path.</p>
+            <div class="showcase-tabs">
+                <button class="showcase-tab" onclick="openShowcaseTab(event, 'showcaseProjects')"><i class="fas fa-code"></i> Projects</button>
+                <button class="showcase-tab" onclick="openShowcaseTab(event, 'showcaseCerts')"><i class="fas fa-certificate"></i> Certificates</button>
+                <button class="showcase-tab" onclick="openShowcaseTab(event, 'showcaseSkills')"><i class="fas fa-layer-group"></i> Tech Stack</button>
+            </div>
+        </div>
+
+        <div id="showcaseProjects" class="showcase-content">
+                <div class="project-grid-container">
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./images/air-qulaity-apis-desktop.webp" alt="Car Rental Website"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">ClearSkies — Air Quality Category Prediction</h3>
+                            <p class="project-description">Machine learning project that predicts air quality categories using real-world sensor data from the UCI Air Quality dataset. Includes an interactive Streamlit dashboard to explore pollution trends and identify the healthiest times of the day.</p>
+                            <div class="project-tech"><span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>NumPy</span><span>Pandas</span></div>
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./images/Student Habits & Academic Performance Prediction.jpeg" alt="Student Habits & Academic Performance Prediction"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Student Habits & Academic Performance Prediction</h3>
+                            <p class="project-description">Predicts student academic performance using lifestyle, study habits, and mental well-being factors. Helps identify key behaviors that influence grades and supports data-driven academic improvement strategies.</p>
+                            <div class="project-tech"><span>Python</span><span>Seaborn</span><span>Pandas</span><span>Scikit-learn</span></div>
+            
+                        </div>
+                    </div>
+                     <div class="project-card reveal">
+                        <div class="project-image"><img src="./images/IntelliRescue — Intelligent Disaster Mitigation System.jpeg" alt="WordPress Website"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">IntelliRescue — Intelligent Disaster Mitigation System</h3>
+                            <p class="project-description">AI-powered disaster prediction platform that processes real-time IoT sensor data and satellite imagery to generate hazard predictions and risk maps. Built scalable data pipelines, automated ingestion using APIs/MQTT, and deployed cloud-based AI services for decision support.</p>
+                            <div class="project-tech"><span>OpenCV</span><span>TensorFlow</span><span>FastAPI</span><span>REST API</span><span>AWS</span><span>MQTT</span><span>PostgreSQL</span><span>GIS Tools</span></div>
+                            
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./images/MetaSurgical — Data-Driven E-commerce Dashboards.png" alt="Smart Wearable Health Monitor"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">MetaSurgical — Data-Driven E-commerce Dashboards</h3>
+                            <p class="project-description">Developed interactive dashboards for e-commerce and admin workflows to improve data visibility and decision-making. Integrated frontend interfaces with backend services to deliver accurate, real-time business insights.</p>
+                            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
+                            
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./images/Handwritten Paragraph Text Recognition (OCR).jpeg" alt="Ecommerce Sentiment Analyzer"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Handwritten Paragraph Text Recognition (OCR)</h3>
+                            <p class="project-description">Built an AI pipeline to convert handwritten paragraph images into machine-readable text using deep learning and OCR techniques. Improved text extraction accuracy and prepared structured outputs for analytics and AI applications.
+</p>
+                            <div class="project-tech"><span>Python</span><span>TensorFlow</span><span>C++</span><span>OpenCV</span><span>HTML,CSS,JavaScript</span></div>
+                            
+                        </div>
+                    </div>
+                    <div class="project-card reveal">
+                        <div class="project-image"><img src="./images/rock_paper.png" alt="Rock, Paper, Scissors Game"></div>
+                        <div class="project-content">
+                            <h3 class="project-title">Rock, Paper, Scissors Game</h3>
+                            <p class="project-description">An interactive Rock, Paper, Scissors game built with a Python backend and a user-friendly web interface using the Streamlit library.</p>
+                            <div class="project-tech"><span>Python</span><span>Streamlit</span></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="more-projects-container">
+                    <a href="https://github.com/shreyareddyyy?tab=repositories" class="more-projects-link" target="_blank" rel="noopener noreferrer">
+                        <span>View All Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="showcaseCerts" class="showcase-content">
+                <div class="certifications-grid">
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194546.png" alt="Web Development Virtual Internship Program">
+                        <div class="card-overlay"><p>Web Development Virtual Internship Program</p></div>
+                    </div>
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194601.png" alt="CLA: Programming Essentials in C">
+                        <div class="card-overlay"><p>CLA: Programming Essentials in C</p></div>
+                    </div>
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194614.png" alt="Cloud Serverless Application By Great Learning">
+                        <div class="card-overlay"><p>Cloud Serverless Application By Great Learning</p></div>
+                    </div>
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194626.png" alt="Data Analytics and Cloud Computing">
+                        <div class="card-overlay"><p>Data Analytics and Cloud Computing</p></div>
+                    </div>
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194636.png" alt="Introduction to Deep Learning By Great Learning">
+                        <div class="card-overlay"><p>Introduction to Deep Learning By Great Learning</p></div>
+                    </div>
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194650.png" alt="Introduction to Machine Learning By Infosys">
+                        <div class="card-overlay"><p>Introduction to Machine Learning By Infosys</p></div>
+                    </div>
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194706.png" alt="Oracle Certified Foundations Associate">
+                        <div class="card-overlay"><p>Oracle Certified Foundations Associate</p></div>
+                    </div>
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194729.png" alt="Python Certification by HackerRank">
+                        <div class="card-overlay"><p>Python Certification by HackerRank</p></div>
+                    </div>
+                    <div class="certificate-card reveal">
+                        <img src="./images/Screenshot 2026-03-27 194743.png" alt="Virtual Cloud Computing">
+                        <div class="card-overlay"><p>Virtual Cloud Computing</p></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div id="showcaseSkills" class="showcase-content">
+                <div class="skills-grid">
+                    <div class="skill-item reveal"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="skill-item reveal"><i class="fab fa-java"></i><span>Java</span></div>
+                    <div class="skill-item reveal"><i class="fab fa-r-project"></i><span>R</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-database"></i><span>SQL</span></div>
+                    <div class="skill-item reveal"><i class="fab fa-tensorflow"></i><span>TensorFlow</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-fire"></i><span>PyTorch</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-chart-bar"></i><span>Scikit-learn</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-cube"></i><span>Keras</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-bolt"></i><span>PySpark</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-hdd"></i><span>Hadoop</span></div>
+                    <div class="skill-item reveal"><i class="fab fa-aws"></i><span>AWS</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-database"></i><span>MongoDB</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-chart-line"></i><span>Matplotlib</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-chart-area"></i><span>Seaborn</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-chart-pie"></i><span>Tableau</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
+                    <div class="skill-item reveal"><i class="fab fa-docker"></i><span>Docker</span></div>
+                    <div class="skill-item reveal"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-code-branch"></i><span>CI/CD</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-book"></i><span>Jupyter Notebook</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-table"></i><span>Pandas</span></div>
+                    <div class="skill-item reveal"><i class="fas fa-cube"></i><span>NumPy</span></div>
+    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="connect" class="section-wrapper">
+        <h2 class="section-heading">Get In Touch</h2>
+        <div class="connect-wrapper reveal">
+            <div class="connect-left">
+                <h3>Let's build something great together.</h3>
+                
+                <p>Whether it's discussing new AI/ML opportunities, collaborative projects, or sharing ideas on human-centered AI, I’d love to hear from you.</p>
+                <div class="social-links-connect">
+                    <a href="mailto:shreyareddysurakanti@gmail.com"><i class="fas fa-envelope"></i> shreyareddysurakanti@gmail.com</a>
+                    <a href="https://github.com/shreyareddyyy" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/akhilanandateja/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="connect-right">
+                <form action="https://formspree.io/f/mvzvgepz" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>Designed & Built by shreyareddysurakanti</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
